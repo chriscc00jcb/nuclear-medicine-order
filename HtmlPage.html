@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        .auto-style1 {
+            width: 271px;
+        }
+    </style>
+</head>
+<body>
+    
+        <h1 align=center>NUCLEAR MEDICINE ORDER</h1>
+    
+    <form id="Form1" action="http://203.64.84.113/x/RQ_RS.aspx" method="post" name="form1">
+    <fieldset>
+        <legend>BASIC INFORMATION:</legend>
+
+        
+            <table>
+                <tr>
+                    <td>Patient Name:
+        <input type="text" name="name" size="10" /><br />
+                    </td>
+                    <td class="auto-style1">Date of birth:
+        <input type="date" name="birthday" /><br />
+                    </td>
+
+                    <td>Gender:<br/>
+        <input type="radio" name="sex" value="M" />Male
+	    <input type="radio" name="sex" value="F" />Female
+        <input type="radio" name="sex" value="U" />Unknown<br />
+                    </td>
+
+                    <td>Identity card number(ID):
+            <input type="text" name="ID" size="10" /><br />
+                        </td>
+
+                            </tr>
+                <tr>
+                    <td colspan="4">
+                        &nbsp;Current address:
+                        <input type="text" name="Current address" size="100" maxlength="30" style="width:80%"/><br />
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td colspan="4">
+                        &nbsp;Permanent Address:
+                         <input type="text" name="Permanent Address" size="100" maxlength="30" style="width:77%"/><br />
+                         </td>
+                </tr>
+                 <tr>
+                    <td colspan="2">
+                        &nbsp;Phone number:<input type="text" name="phone number" size="100" maxlength="30" style="width:42%"/><br />
+                    </td>
+                      <td colspan="2">
+                        &nbsp;Home number:<input type="text" name="home number" size="100" maxlength="30" style="width:42%"/><br />
+                    </td>
+                </tr>
+
+
+            </table>
+
+
+            其他:<br />
+            <textarea name="suggest" style="width: 244px; height: 47px"></textarea><br />
+
+            <input type="reset" value="清除" />
+           
+        
+
+    </fieldset>
+    <fieldset>
+        <h3>SKELETAL</h3>
+        <input type="checkbox" name="SKELETAL1" value="1"/> Whole Body Bone Scan:3-Phase Bone Scan:
+	<input type="checkbox" name="SKELETAL2" value="2"/>3-Phase Bone Scan:Limited Bone Scan:
+	<input type="checkbox" name="SKELETAL3" value="3"/>Limited Bone Scan:<input type="checkbox" name="inte3" value="4"/>Multiple Images<input type="checkbox" name="inte3" value="5"/>SPECT<br />
+
+        </fieldset>
+
+        <fieldset>
+             <h3>CARDIAC </h3>
+        <input type="checkbox" name="CARDIAC1" value="1"/> Cardiac Stress-Myocardial Perfusion Study w/LEXISCAN :
+	<input type="checkbox" name="CARDIAC2" value="2"/>MUGA:
+	<input type="checkbox" name="CARDIAC3" value="3"/>Cardiac Stress-Myocardial Perfusion Study w/TREADMILL
+             <p><small>NOTE: Treadmill Stress Test may be converted to Lexiscan by the stressing doctor if patient is unable to perform, complete, or reach target heart
+rate</small></p>
+            </fieldset>
+        <fieldset>
+             <h3>LIVER/SPLEEN/GALLBLADDER </h3>
+        <input type="checkbox" name="LIVER/SPLEEN/GALLBLADDER1" value="1"/> HIDA w/Ejection Fraction :
+	<input type="checkbox" name="LIVER/SPLEEN/GALLBLADDER2" value="2"/>Liver/Spleen Static :
+	<input type="checkbox" name="LIVER/SPLEEN/GALLBLADDER3" value="3"/>Liver (Hemangioma)
+            <input type="checkbox" name="LIVER/SPLEEN/GALLBLADDER4" value="4"/> Liver/Spleen SPECT :
+            <input type="checkbox" name="LIVER/SPLEEN/GALLBLADDER5" value="5"/> Spleen SPECT  :
+             <p><small>NOTE: CCK 0.02mcg/kg IV</small></p>
+            </fieldset>
+         <fieldset>
+             <h3>GASTROINTESTINAL</h3>
+        <input type="checkbox" name="GASTROINTESTINAL1" value="1"/>  Gastric Empty :
+	<input type="checkbox" name="GASTROINTESTINAL2" value="2"/>GI Bleed  :
+	<input type="checkbox" name="GASTROINTESTINAL3" value="3"/>Gastroesophageal Reflux
+            <input type="checkbox" name="GASTROINTESTINAL4" value="4"/>  Meckel's Diverticulum  :
+            <input type="checkbox" name="GASTROINTESTINAL5" value="5"/> Urea Breath Test  :
+            </fieldset>
+         <fieldset>
+             <h3>RESPIRATORY</h3>
+        <input type="checkbox" name="RESPIRATORY1" value="1"/>  Lung VQ  :
+	<input type="checkbox" name="RESPIRATORY2" value="2"/>Lung Perfusion Only   :
+	<input type="checkbox" name="RESPIRATORY3" value="3"/>Lung Differential
+            </fieldset>
+         <fieldset>
+             <h3>RENAL</h3>
+        <input type="checkbox" name="RENAL1" value="1"/> Renal w/Lasix :
+	<input type="checkbox" name="RENAL2" value="2"/>Renal Function   :
+	<input type="checkbox" name="RENAL3" value="3"/>Renal Scarring 
+             <input type="checkbox" name="RENAL4" value="4"/>Renal Hypertension  
+            </fieldset>
+        
+
+         <input type="submit" value="Login" />
+    </form>
+</body>
+</html>
